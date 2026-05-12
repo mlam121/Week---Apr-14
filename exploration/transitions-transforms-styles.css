@@ -1,0 +1,65 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 2em;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 1em 2em;
+      margin: 1em;
+      background-color: #9dc3e6;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+      padding: 1em;
+      width: 200px;
+      margin: 1em;
+      text-align: center;
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* ✨ Add your transition and transform effects below this line ✨ */
+
+
+    /* add hover to links */
+    .button:hover {
+      background-color: greenyellow;
+      transform: rotate(600deg) scale(2.2);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    
+    }
+
+    /* add hover to cards */
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 4px 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+ /* add spin and scale */
+    .card {
+  transition: transform 0.5s ease;
+}
+
+.card:hover {
+  transform: rotate(400deg) scale(2.2);
+}
